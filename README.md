@@ -1,9 +1,10 @@
 # Setup Notes
 
 This repo was built to be used with Virtual Box and Vagrant.  Please make sure
-you have install both Virtual Box and Vagrant before trying to use.
+you have installed both Virtual Box and Vagrant before trying to use.
 
   VirtualBox - https://www.virtualbox.org/wiki/Downloads
+
   Vagrant    - https://www.vagrantup.com/downloads.html
 
 Once the above have been installed, follow these steps to get up and running:
