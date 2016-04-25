@@ -13,6 +13,9 @@ apt-get -y install vim
 # Install git tool
 apt-get -y install git
 
+# Install NodeJS
+apt-get -y install nodejs
+
 # Install curl utility
 apt-get -y install curl
 
