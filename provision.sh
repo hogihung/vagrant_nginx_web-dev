@@ -1,3 +1,5 @@
+# NOTE: For most installation commands, sudo is not required when using vagrant.
+
 # Update Ubuntu
 apt-get -y update
 
