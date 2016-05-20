@@ -29,7 +29,7 @@ Once the above have been installed, follow these steps to get up and running:
 ```
 # Change to your favorite location for working with projects
 cd ~/Documents/PROJECTS/
-git clone https://github.com/hogihung/vagrant_nginx_web-dev.git vagrant_webdev
+git clone https://github.com/hogihung/vagrant_webdev_web-dev.git vagrant_webdev
 cd vagrant_webdev
 vagrant up
 ```  
@@ -72,7 +72,7 @@ vagrant@web-dev:~$ sudo su postgres -
 postgres@web-dev:/home/vagrant$ psql --version
 psql (PostgreSQL) 9.5.2
 postgres@web-dev:/home/vagrant$ exit
-➜  vagrant_nginx git:(master) ✗
+➜  vagrant_webdev git:(master) ✗
 
 vagrant@web-dev:~$ sqlite3 -version
 3.7.9 2011-11-01 00:52:41 c7c6050ef060877ebe77b41d959e9df13f8c9b5e
@@ -89,10 +89,10 @@ Assumption:  You cloned this repo in a directory similar to:  /Users/your_user_n
 If you are not already in the cloned repo directory, change to it now:
 
 ```
-cd /Users/your_user_name/PROJECTS/vagrant_nginx
+cd /Users/your_user_name/PROJECTS/vagrant_webdev
 
 Example (my setup)
-cd /Users/jfhogarty/Documents/RoR/vagrant_nginx
+cd /Users/jfhogarty/Documents/RoR/vagrant_webdev
 ```
 
 Create a file, for testing purposes, in the above directory.  Then edit the file with some basic text:
@@ -111,16 +111,16 @@ Save and exit the file.  Confirm the contents of the file:
 cat my_test_file.txt
 
 Example:
-➜  vagrant_nginx git:(master) ✗ cat my_test_file.txt
+➜  vagrant_webdev git:(master) ✗ cat my_test_file.txt
 # This is a sample file
 Hello from planet earth.
-➜  vagrant_nginx git:(master) ✗
+➜  vagrant_webdev git:(master) ✗
 ```
 
 In a different terminal session, navigate to the same directory as we did above:
 
 ```
-cd /Users/your_user_name/PROJECTS/vagrant_nginx
+cd /Users/your_user_name/PROJECTS/vagrant_webdev
 ```
 
 Now we want to connect to our virtual machine.  If you don't have your VM up yet, do that first:
@@ -137,7 +137,7 @@ cd /vagrant
 ls -la
 
 Example:
-➜  vagrant_nginx git:(master) ✗ vagrant ssh
+➜  vagrant_webdev git:(master) ✗ vagrant ssh
 Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
