@@ -1,3 +1,20 @@
+VAGRANT BASED WEB-DEV ENVIRONMENT
+================================
+
+# What is included?
+1.  Nginx Web Server
+2.  Vim
+3.  Git
+4.  Curl
+5.  RVM (Ruby Version Manager)
+6.  Ruby (2.2.3)
+7.  Rails (4.2.5)
+8.  Node (0.6.12)
+9.  Postgresql 9.5
+10. Sqlite 3 
+11. Tmux 1.9
+
+
 # Setup Notes
 
 This repo was built to be used with Virtual Box and Vagrant.  Please make sure
@@ -12,33 +29,58 @@ Once the above have been installed, follow these steps to get up and running:
 ```
 # Change to your favorite location for working with projects
 cd ~/Documents/PROJECTS/
-git clone https://github.com/hogihung/vagrant_nginx_web-dev.git vagrant_nginx
-cd vagrant_nginx
+git clone https://github.com/hogihung/vagrant_nginx_web-dev.git vagrant_webdev
+cd vagrant_webdev
 vagrant up
 ```  
 
+*Note: The first time you run vagrant up, or if you do a vagrant destroy and
+then a vagrant up, it will take some time as it is provisioning your environment.*
 
-Confirming the basics have all been installed properly:
+
+# Confirming the basics have all been installed properly:
 
 ```
 vagrant ssh
 
 vagrant@web-dev:~$ uname -a
 Linux web-dev 3.2.0-23-generic #36-Ubuntu SMP Tue Apr 10 20:39:51 UTC 2012 x86_64 x86_64 x86_64 GNU/Linux
+vagrant@web-dev:~$ 
+
 vagrant@web-dev:~$ vim --version
 VIM - Vi IMproved 7.3 (2010 Aug 15, compiled May  4 2012 04:25:35)
 {--snip--}
+vagrant@web-dev:~$
+
 vagrant@web-dev:~$ git --version
 git version 1.7.9.5
+vagrant@web-dev:~$
+
 vagrant@web-dev:~$ ruby -v
 ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]
+vagrant@web-dev:~$
+
 vagrant@web-dev:~$ rails -v
 Rails 4.2.5
+vagrant@web-dev:~$
+
+vagrant@web-dev:~$ node -v
+v0.6.12
+vagrant@web-dev:~$
+
 vagrant@web-dev:~$ sudo su postgres -
 postgres@web-dev:/home/vagrant$ psql --version
 psql (PostgreSQL) 9.5.2
 postgres@web-dev:/home/vagrant$ exit
 ➜  vagrant_nginx git:(master) ✗
+
+vagrant@web-dev:~$ sqlite3 -version
+3.7.9 2011-11-01 00:52:41 c7c6050ef060877ebe77b41d959e9df13f8c9b5e
+vagrant@web-dev:~$ 
+
+vagrant@web-dev:~$ tmux -V
+tmux 1.6
+vagrant@web-dev:~$
 ```
 
 ## Working between your host and virtual machine
@@ -129,5 +171,4 @@ vagrant@web-dev:/vagrant$
 As you can see, the file you created on your host, in the vagrant project directory, is syncronized to the VM.
 You can update the file while on your VM, then go to your terminal session on the host machine and confirm that
 the changes sync both ways.
-
 

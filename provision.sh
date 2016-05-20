@@ -42,3 +42,12 @@ sudo apt-get -y update
 # Install postgresql 9.5
 apt-get -y install postgresql postgresql-contrib
 
+# Install Sqlite 3 database
+apt-get -y install sqlite3 libsqlite3-dev
+
+# Install Tmux
+apt-get install -y python-software-properties software-properties-common
+add-apt-repository -y ppa:pi-rho/dev
+sudo apt-get update
+apt-get -y install tmux
+
