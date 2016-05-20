@@ -172,3 +172,38 @@ As you can see, the file you created on your host, in the vagrant project direct
 You can update the file while on your VM, then go to your terminal session on the host machine and confirm that
 the changes sync both ways.
 
+# Starter Rails Application
+While still logged in to your Vagrant VM (via vagrant ssh), create a directory
+in your shared folder for your Rails projects:
+
+```
+vagrant@web-dev:~$ pwd
+/home/vagrant
+vagrant@web-dev:~$
+
+vagrant@web-dev:~$mkdir RAILS_PROJECTS
+vagrant@web-dev:~$cd RAILS_PROJECTS
+```
+
+Now that we have a directory for our Rails Projects, and we have changed to it,
+let's create a sample Rails application:
+
+```
+rails new my_example_app
+cd my_example_app
+bundle
+```
+
+Next we need to start the rails server on the Vagrant VM:
+
+```
+rails s -b 0.0.0.0
+```
+
+Now, using a web browser on your Host operating system (Windows, OSX, Linux,)
+visit the url:  http://localhost:3000
+
+You should see the default Rails application welcome page:
+**Welcome aboard**
+
+Congratulations!
