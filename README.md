@@ -2,17 +2,18 @@ VAGRANT BASED WEB-DEV ENVIRONMENT
 ================================
 
 # What is included?
-1.  Nginx Web Server
+1.  Nginx Web Server (1.1.19)
 2.  Vim
 3.  Git
 4.  Curl
 5.  RVM (Ruby Version Manager)
 6.  Ruby (2.2.3)
 7.  Rails (4.2.5)
-8.  Node (0.6.12)
-9.  Postgresql 9.5
-10. Sqlite 3 
-11. Tmux 1.9
+8.  Puma (Ruby concurrent web server)
+9.  Node (0.6.12)
+10. Postgresql 9.5
+11. Sqlite 3 
+12. Tmux 1.9
 
 
 # Setup Notes
@@ -54,6 +55,10 @@ vagrant@web-dev:~$
 
 vagrant@web-dev:~$ git --version
 git version 1.7.9.5
+vagrant@web-dev:~$
+
+vagrant@web-dev:~$ nginx -v
+nginx version: nginx/1.1.19
 vagrant@web-dev:~$
 
 vagrant@web-dev:~$ ruby -v
