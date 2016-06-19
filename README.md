@@ -206,7 +206,7 @@ bundle
 Next we need to start the rails server on the Vagrant VM:
 
 ```
-rails s -b 0.0.0.0
+rails s -b 0.0.0.0 Puma
 ```
 
 Now, using a web browser on your Host operating system (Windows, OSX, Linux,)
