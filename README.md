@@ -9,7 +9,7 @@ VAGRANT BASED WEB-DEV ENVIRONMENT
 5.  RVM (Ruby Version Manager)
 6.  Ruby (2.2.3)
 7.  Rails (4.2.5)
-8.  Puma (Ruby concurrent web server)
+8.  Puma (3.4.0, Ruby concurrent web server)
 9.  Node (0.6.12)
 10. Postgresql 9.5
 11. Sqlite 3 
@@ -60,6 +60,10 @@ vagrant@web-dev:~$
 vagrant@web-dev:~$ nginx -v
 nginx version: nginx/1.1.19
 vagrant@web-dev:~$
+
+vagrant@web-dev:~$ puma --version
+puma version 3.4.0
+vagrant@web-dev:~$  
 
 vagrant@web-dev:~$ ruby -v
 ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-linux]
