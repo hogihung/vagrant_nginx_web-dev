@@ -34,6 +34,9 @@ gem install bundler
 # Install Rails 4.2.5
 gem install rails -v 4.2.5
 
+# Install Puma (Ruby concurrent web server)
+gem install puma 
+
 # Add postgresql 9.5 repo
 sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | apt-key add -
