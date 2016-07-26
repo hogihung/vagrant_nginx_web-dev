@@ -1,6 +1,8 @@
 VAGRANT BASED WEB-DEV ENVIRONMENT
 ================================
 
+**UPDATE**:  This repo was built using Vagrant 1.8.1 and VirtualBox 5.0.24.  I've recently encountered issues using the hashicorp/precise64 box with Vagrant 1.8.3+ and/or VirtualBox 5.1.x+.  If you have issues when running vagrant up, you can try using a different box, for example: phusion/ubuntu-14.04-amd64 or bento/ubuntu-14.04.
+
 # What is included?
 1.  Nginx Web Server (1.1.19)
 2.  Vim
