@@ -32,7 +32,7 @@ Once the above have been installed, follow these steps to get up and running:
 ```
 # Change to your favorite location for working with projects
 cd ~/Documents/PROJECTS/
-git clone https://github.com/hogihung/vagrant_webdev_web-dev.git vagrant_webdev
+git clone https://github.com/hogihung/vagrant_nginx_web-dev.git vagrant_webdev
 cd vagrant_webdev
 vagrant up
 ```  
